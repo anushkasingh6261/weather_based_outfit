@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pen</title>
+  </head>
+  <body>
+
+    <div class="wrap">
+  <h1>What should I wear?</h1>
+  <p class="sub">Set the conditions and the recommendation updates below.</p>
+
+  <div class="controls">
+    <div class="field full">
+      <label>Temperature — <span class="tempval" id="tempLabel">15°C</span></label>
+      <input type="range" id="temp" min="-10" max="38" value="15">
+    </div>
+    <div class="field">
+      <label>Sky</label>
+      <select id="condition">
+        <option value="clear">Clear</option>
+        <option value="clouds">Cloudy</option>
+        <option value="rain">Rain</option>
+        <option value="snow">Snow</option>
+      </select>
+    </div>
+    <div class="field">
+      <label>Wind</label>
+      <select id="wind">
+        <option value="calm">Calm</option>
+        <option value="breezy">Breezy</option>
+        <option value="gusty">Gusty</option>
+      </select>
+    </div>
+  </div>
+
+  <div class="result">
+    <div class="result-top">
+      <div>
+        <p class="headline" id="headline"></p>
+        <p class="reading" id="reading"></p>
+      </div>
+      <div class="icon" id="conditionIcon"></div>
+    </div>
+    <div class="items" id="items"></div>
+  </div>
+</div>
+
+    <script src="./script.js"></script>
+  </body>
+</html>
